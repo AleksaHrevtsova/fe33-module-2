@@ -20,11 +20,12 @@
 </head>
 <body>
   <header class="header">
-    <nav>
+    <div class="container">
+    <nav class="header-nav">
       <a href="#">
         <img src="./images/logo.svg" alt="img">
       </a>
-      <ul>
+      <ul class="nav-list">
         <li>
           <a href="#about" class="nav-link current">О нас</a>
         </li>
@@ -38,7 +39,7 @@
           <a href="#contacts" class="nav-link">Контакты</a>
         </li>
       </ul>
-      <ul>
+      <ul class="contacts-list">
         <li>
           <a href="tel:+380441111111" class="nav-link">+38044 111 11 11</a>
         </li>
@@ -46,7 +47,7 @@
           <a href="#onlinesign" class="online-sign">онлайн-запись</a>
         </li>
       </ul>
-      <ul>
+      <ul class="media-list"> 
         <li>
           <a href="#" class="nav-link">instagram</a>
         </li>
@@ -55,39 +56,48 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
   <main>
     <section class="hero">
+      <div class="container">
       <p class="hero-pretitle pretitle">A hair salon for men in Kyiv</p>
       <h1 class="hero-title title">BarberShop</h1>
-      <p class="hero-desc short-desc">Мы эксперты в модных мужских стрижках.
+      <p class="hero-desc short-desc">Мы эксперты в модных мужских стрижках.<br>
         Работаем быстро, осторожно и со вкусом.</p>
+        <div class="hero-btns">
         <button class="hero-btn">назад</button>
         <button class="hero-btn">вперед</button>
+      </div>
+      </div>
     </section>
     <section class="about" id="about">
-      <ul>
+      <div class="container">
+      <ul class="about-images">
         <li>
-          <img src="#" alt="img">
+          <img src="./images/about/img1.jpg" alt="img" width="270">
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/about/img2.jpg" alt="img" width="270">
         </li>
       </ul>
       <div>
         <p class="about-pretitle pretitle">О НАС</p>
         <h2  class="about-title title">Лучший Барбершоп <br/>
           твоего города</h2>
-          <pre class="about-desc short-desc">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</pre>
-      <pre class="about-desc description">Мы команда, которая никогда не останавливается на достигнутом
+          <p class="about-desc short-desc">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+      <p class="about-desc description">Мы команда, которая никогда не останавливается на достигнутом
         и жаждет перемен. И когда ты попадешь в руки нашего мастера,
-        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</pre>
+        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
         <a href="#onlinesign" class="online-sign">онлайн-запись</a>
       </div>
+    </div>
     </section>
     <section class="services" id="services">
+      <div class="container">
       <p class="services-pretitle pretitle">Проведи время в компании лучших мастеров</p>
       <h2 class="services-title title">Услуги и цены</h2>
+      <div class="tables-wrapper">
       <table class="table">
         <tr>
           <td>Мужская стрижка</td>
@@ -124,9 +134,12 @@
           <td>от 200 грн.</td>
         </tr>
       </table>
+    </div>
       <a href="#" class="online-sign">онлайн-запись</a>
+    </div>
     </section>
     <section class="oldschool">
+      <div class="container">
       <ul class="showlist">
         <li>
           <p class="showlist-num">600</p>
@@ -150,18 +163,20 @@
         <h2 class="oldschool-title title">Почему приходят именно к нам?</h2>
         <p class="oldschool-desc desc">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
       </div>
+    </div>
     </section>
     <section class="masters" id="masters">
+      <div class="container">
       <p class="masters-pretitle pretitle">для настоящих ценителей атмосферы</p>
       <h2 class="masters-title title">Наши мастера</h2>
-      <ul>
+      <ul class="masters-titles">
         <li>
-          <img src="#" alt="img">
+          <img src="./images/masters/img1.jpg" alt="img" width="370">
           <h3 class="master-name">John Smith</h3>
           <p class="master-position">Extreme Barber</p>
-          <ul>
+          <ul class="master-icons">
             <li>
-              <a href="#">insta</a>
+              <a href="#">ins</a>
             </li>
             <li>
               <a href="#">tw</a>
@@ -175,12 +190,12 @@
           </ul>
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/masters/img2.jpg" alt="img" width="370">
           <h3 class="master-name">John Smith</h3>
           <p class="master-position">Extreme Barber</p>
-          <ul>
+          <ul class="master-icons">
             <li>
-              <a href="#">insta</a>
+              <a href="#">ins</a>
             </li>
             <li>
               <a href="#">tw</a>
@@ -194,12 +209,12 @@
           </ul>
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/masters/img3.jpg" alt="img" width="370">
           <h3 class="master-name">John Smith</h3>
           <p class="master-position">Extreme Barber</p>
-          <ul>
+          <ul class="master-icons">
             <li>
-              <a href="#">insta</a>
+              <a href="#">ins</a>
             </li>
             <li>
               <a href="#">tw</a>
@@ -234,26 +249,30 @@
           </ul>
         </li> -->
       </ul>
+    </div>
     </section>
     <section class="barba">
+      <div class="container">
       <!-- <h2>title</h2> -->
       <p class="barba-pretitle pretitle">На латинском языке “барба” означает “борода”</p>
-      <ul>
+      <ul class="barba-list">
         <li>
-          <img src="#" alt="img">
+          <img src="./images/barba/img1.jpg" alt="img" width="270">
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/barba/img2.jpg" alt="img" width="270">
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/barba/img3.jpg" alt="img" width="270">
         </li>
         <li>
-          <img src="#" alt="img">
+          <img src="./images/barba/img4.jpg" alt="img" width="270">
         </li>
       </ul>
+    </div>
     </section>
     <section class="contacts">
+      <div class="container">
       <div id="onlinesign">
         <h2 class="contacts-title title">Онлайн-запись</h2>
         <form class="signform">
@@ -265,18 +284,20 @@
       </div>
       <div id="contacts">
         <h2 class="contacts-title title">Контакты</h2>
-        <address>
+        <address class="contacts-links">
           <a href="#">ул. Васильковая, 7А <br/>
             Киев, 08132</a>
           <a href="tel:+380441111111">+38044 111 11 11</a>
-          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+          <a href="mailto:barbershop@email.com" name="mail">barbershop@email.com</a>
         </address>
         <h3 class="worktime-title">время работы</h3>
         <p class="worktime">Ежедневно с 9:00 до 22:00</p>
       </div>
+    </div>
     </section>
   </main>
   <footer class="footer">
+    <div class="container">
     <p>&copy; Copyright 2020</p>
     <!-- <p>&#169; </p> -->
     <!-- <p>&#xa9; </p> -->
@@ -288,6 +309,7 @@
         <a href="#" class="nav-link">youtube</a>
       </li>
     </ul>
+  </div>
   </footer>
 </body>
 </html>
